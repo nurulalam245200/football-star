@@ -1,9 +1,7 @@
 document
   .getElementById("btn-playerTotal-price")
   .addEventListener("click", function () {
-    const getPerPlayerPrice = document.getElementById("per-player-price");
-    const perPlayerPriceString = getPerPlayerPrice.value;
-    const perPlayerPrice = parseFloat(perPlayerPriceString);
+    const perPlayerPrice = getInputElements("per-player-price");
 
     const totalPlayerPrice = perPlayerPrice * 5;
 
