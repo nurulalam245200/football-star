@@ -13,17 +13,11 @@ document
   });
 
 document.getElementById("btn-fullCost").addEventListener("click", function () {
-  const getManagePrice = document.getElementById("manage-price");
-  const managePriceString = getManagePrice.value;
-  const managePrice = parseFloat(managePriceString);
+  const managePrice = getInputElements("manage-price");
 
-  const getCoachPrice = document.getElementById("coach-price");
-  const coachPriceString = getCoachPrice.value;
-  const coachPrice = parseFloat(coachPriceString);
+  const coachPrice = getInputElements("coach-price");
 
-  const getPerPlayerPrice = document.getElementById("per-player-price");
-  const perPlayerPriceString = getPerPlayerPrice.value;
-  const perPlayerPrice = parseFloat(perPlayerPriceString);
+  const perPlayerPrice = getInputElements("per-player-price");
 
   const totalPlayerPrice = perPlayerPrice * 5;
 
