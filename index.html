@@ -37,40 +37,40 @@
       <section class="mt-8">
         <div class="grid grid-cols-4 gap-4 w-4/5 mx-auto">
           <!-- player 1  -->
-          <div class="rounded-lg bg-black">
+          <div class="rounded-lg bg-black pt-3">
             <img src="images/players/messi.png" alt="player1" />
-            <h3 class="text-3xl text-center text-white">Leone Messi</h3>
+            <h3 class="text-3xl text-center text-white" id="playerName1">Mohammad Salah</h3>
             <p class="text-slate-400 text-center">
-              <span>55 Goals</span> | <span>122 Assist</span>
+              <span>52 Goals</span> | <span>103 Assist</span>
             </p>
             <div class="flex justify-center">
-              <button class="bg-blue-600 px-12 py-3 rounded-lg mb-3 mt-2">
+              <button onclick="addName('playerName1')" class="bg-blue-600 px-12 py-3 rounded-lg mb-3 mt-2">
                 Select
               </button>
             </div>
           </div>
           <!-- player 2  -->
-          <div class="rounded-lg bg-black">
+          <div class="rounded-lg bg-black pt-3">
             <img src="images/players/messi.png" alt="player1" />
-            <h3 class="text-3xl text-center text-white">Leone Messi</h3>
+            <h3 class="text-3xl text-center text-white" id="playerName2">Leone Messi</h3>
             <p class="text-slate-400 text-center">
-              <span>55 Goals</span> | <span>122 Assist</span>
+              <span>39 Goals</span> | <span>92 Assist</span>
             </p>
             <div class="flex justify-center">
-              <button class="bg-blue-600 px-12 py-3 rounded-lg mb-3 mt-2">
+              <button onclick="addName('playerName2')" class="bg-blue-600 px-12 py-3 rounded-lg mb-3 mt-2">
                 Select
               </button>
             </div>
           </div>
           <!-- player 3  -->
-          <div class="rounded-lg bg-black">
+          <div class="rounded-lg bg-black pt-3">
             <img src="images/players/messi.png" alt="player1" />
-            <h3 class="text-3xl text-center text-white">Leone Messi</h3>
+            <h3 class="text-3xl text-center text-white" id="playerName3">Neymar Jr.</h3>
             <p class="text-slate-400 text-center">
-              <span>55 Goals</span> | <span>122 Assist</span>
+              <span>67 Goals</span> | <span>122 Assist</span>
             </p>
             <div class="flex justify-center">
-              <button class="bg-blue-600 px-12 py-3 rounded-lg mb-3 mt-2">
+              <button onclick="addName('playerName3')" class="bg-blue-600 px-12 py-3 rounded-lg mb-3 mt-2">
                 Select
               </button>
             </div>
@@ -79,57 +79,51 @@
           <div class="rounded-lg bg-black">
             <div class="grid grid-col">
               <div>
-                <h2 class="text-center text-3xl text-white">Select Player</h2>
+                <h2 class="text-center text-3xl text-amber-600">Top Player</h2>
               </div>
-              <div>
-                <ul>
-                  <li class="text-white text-lg">1</li>
-                  <li class="text-white text-lg">2</li>
-                  <li class="text-white text-lg">3</li>
-                  <li class="text-white text-lg">4</li>
-                  <li class="text-white text-lg">5</li>
-                </ul>
+              <div id="topPlayer" class="text-white p-3">
+               
               </div>
             </div>
           </div>
 
-          <!-- player 1  -->
-          <div class="rounded-lg bg-black">
+          <!-- player 4  -->
+          <div class="rounded-lg bg-black pt-3">
             <img src="images/players/messi.png" alt="player1" />
-            <h3 class="text-3xl text-center text-white">Leone Messi</h3>
+            <h3 class="text-3xl text-center text-white" id="playerName4">C Ronaldo</h3>
             <p class="text-slate-400 text-center">
-              <span>55 Goals</span> | <span>122 Assist</span>
+              <span>38 Goals</span> | <span>87 Assist</span>
             </p>
             <div class="flex justify-center">
-              <button class="bg-blue-600 px-12 py-3 rounded-lg mb-3 mt-2">
+              <button onclick="addName('playerName4')" class="bg-blue-600 px-12 py-3 rounded-lg mb-3 mt-2">
                 Select
               </button>
             </div>
           </div>
 
-          <!-- player 1  -->
-          <div class="rounded-lg bg-black">
+          <!-- player 5  -->
+          <div class="rounded-lg bg-black pt-3">
             <img src="images/players/messi.png" alt="player1" />
-            <h3 class="text-3xl text-center text-white">Leone Messi</h3>
+            <h3 class="text-3xl text-center text-white" id="playerName5">Thiago Silva</h3>
             <p class="text-slate-400 text-center">
-              <span>55 Goals</span> | <span>122 Assist</span>
+              <span>52 Goals</span> | <span>99 Assist</span>
             </p>
             <div class="flex justify-center">
-              <button class="bg-blue-600 px-12 py-3 rounded-lg mb-3 mt-2">
+              <button onclick="addName('playerName5')" class="bg-blue-600 px-12 py-3 rounded-lg mb-3 mt-2">
                 Select
               </button>
             </div>
           </div>
 
-          <!-- player 1  -->
-          <div class="rounded-lg bg-black">
+          <!-- player 6  -->
+          <div class="rounded-lg bg-black pt-3">
             <img src="images/players/messi.png" alt="player1" />
-            <h3 class="text-3xl text-center text-white">Leone Messi</h3>
+            <h3 id="playerName6" class="text-3xl text-center text-white" id="playerName6">Merselo</h3>
             <p class="text-slate-400 text-center">
-              <span>55 Goals</span> | <span>122 Assist</span>
+              <span>45 Goals</span> | <span>97 Assist</span>
             </p>
             <div class="flex justify-center">
-              <button class="bg-blue-600 px-12 py-3 rounded-lg mb-3 mt-2">
+              <button onclick="addName('playerName6')" id="btn-select6" class="bg-blue-600 px-12 py-3 rounded-lg mb-3 mt-2">
                 Select
               </button>
             </div>
@@ -138,7 +132,7 @@
           <!-- budget  -->
           <div class="rounded-lg bg-black">
            <div class="text-white">
-            <h1 class="text-amber-700 text-3xl font-medium text-center mb-3">Budget</h1>
+            <h1 class="text-amber-600 text-3xl font-medium text-center mb-3">Budget</h1>
 
             <div class="flex items-center gap-1 justify-center">
               <label for="player-price" class="text-base mr-2">Per Player</label>
@@ -172,7 +166,7 @@
           class="bg-blue-600 px-12 py-3 text-center font-semibold text-white text-xl rounded-lg">Calculate Total</button>
         </div>
 
-        <h3 class="text-xl text-center mt-2 mb-2">Total: $<span id="total-cost">0</span></h3>
+        <h3 class="text-xl text-center mt-2 mb-2">Total: $<span id="total-cost" class="text-amber-500">0</span></h3>
           </div>
         </div>
 
@@ -183,5 +177,6 @@
     </main>
     <script src="js/utilities.js"></script>
     <script src="js/budget-calculation.js"></script>
+    <script src="js/select-player.js"></script>
   </body>
 </html>
