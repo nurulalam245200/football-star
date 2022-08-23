@@ -4,16 +4,14 @@ document
     const perPlayerPrice = getInputElements("per-player-price");
 
     if (isNaN(perPlayerPrice)) {
-      alert("please give a Number");
+      alert("Please give Player Cost In a Number!!");
+      document.getElementById("per-player-price").focus();
     } else {
       const totalPlayerPrice = perPlayerPrice * getPlayerQuantity(i);
 
       const getPreviousTotalPrice =
         document.getElementById("total-player-price");
-      const previousTotalPriceString = getPreviousTotalPrice.innerText;
-      const previousTotalPrice = parseFloat(previousTotalPriceString);
-
-      getPreviousTotalPrice.innerText = totalPlayerPrice + previousTotalPrice;
+      getPreviousTotalPrice.innerText = totalPlayerPrice;
     }
   });
 
@@ -21,8 +19,15 @@ document.getElementById("btn-fullCost").addEventListener("click", function () {
   const managePrice = getInputElements("manage-price");
   const coachPrice = getInputElements("coach-price");
   const perPlayerPrice = getInputElements("per-player-price");
-  if (isNaN(managePrice) || isNaN(coachPrice) || isNaN(perPlayerPrice)) {
-    alert("Please give a Number");
+  if (isNaN(managePrice)) {
+    alert("Please give Manage Amount!!");
+    document.getElementById("manage-price").focus();
+  } else if (isNaN(coachPrice)) {
+    alert("Please give Couch Amount!!");
+    document.getElementById("coach-price").focus();
+  } else if (isNaN(perPlayerPrice)) {
+    alert("Please give Player Amount!!");
+    document.getElementById("per-player-price").focus();
   } else {
     const totalPlayerPrice = perPlayerPrice * getPlayerQuantity(i);
     const setTotalCost = document.getElementById("total-cost");

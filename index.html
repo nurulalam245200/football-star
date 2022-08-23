@@ -9,13 +9,13 @@
   </head>
   <body class="bg-gray-700">
     <!-- banner sector start  -->
-    <header>
-      <div class="flex bg-black">
-        <div class="bg-cover bg-[url('images/banner-image/tattoo.png')]">
+    <header class="">
+      <div class="flex bg-black pt-24">
+        <div class="flex flex-col items-center justify-end bg-cover bg-[url('images/banner-image/tattoo.png')]">
           <img src="images/banner-image/thiago-Silva.png" alt="" />
         </div>
         <div class="flex flex-col item-center justify-center">
-          <h1 class="text-white text-center text-7xl text-amber-600">
+          <h1 class="text-white text-center font-semibold text-7xl text-amber-600 mb-4">
             Select Your Own Universe
           </h1>
           <p class="text-white text-center">
@@ -26,20 +26,22 @@
             we will provide best football player list in you own choose
           </p>
         </div>
-        <div class="flex flex-col items-center justify-end">
-          <img src="images/banner-image/wins.png" alt="" />
+        <div class="flex flex-col items-end justify-end">
+          <img src="images/banner-image/tattoo_PNG5483.png" alt="">
+          <img src="images/banner-image/wins.png" alt="image-banner" />
         </div>
       </div>
     </header>
     <!-- banner sector end  -->
 
-    <main class="">
-      <section class="mt-8">
+    <main class="mt-24">
+      <section class="">
         <div class="grid grid-cols-4 gap-4 w-4/5 mx-auto">
-          <!-- player 1  -->
+
+          <!-- player 1 start -->
           <div class="rounded-lg bg-black pt-3">
             <img src="images/players/mohammaed-salah.png" alt="player1" />
-            <h3 class="text-3xl text-center text-white" id="playerName1">Mohammad Salah</h3>
+            <h3 class="text-3xl text-center text-white" id="playerName1">M Salah</h3>
             <p class="text-slate-400 text-center">
               <span>52 Goals</span> | <span>103 Assist</span>
             </p>
@@ -49,7 +51,9 @@
               </button>
             </div>
           </div>
-          <!-- player 2  -->
+           <!-- player 1 end -->
+
+          <!-- player 2 start -->
           <div class="rounded-lg bg-black pt-3">
             <img src="images/players/messi.png" alt="player1" />
             <h3 class="text-3xl text-center text-white" id="playerName2">Leone Messi</h3>
@@ -62,7 +66,9 @@
               </button>
             </div>
           </div>
-          <!-- player 3  -->
+           <!-- player 2 end  -->
+
+          <!-- player 3 start -->
           <div class="rounded-lg bg-black pt-3">
             <img src="images/players/nymar.png" alt="player1" />
             <h3 class="text-3xl text-center text-white" id="playerName3">Neymar Jr.</h3>
@@ -75,7 +81,7 @@
               </button>
             </div>
           </div>
-
+    <!-- player 3 start -->
           <div class="rounded-lg bg-black">
             <div class="grid grid-col">
               <div>
@@ -87,7 +93,8 @@
             </div>
           </div>
 
-          <!-- player 4  -->
+          <!-- player 4 start  -->
+
           <div class="rounded-lg bg-black pt-3">
             <img src="images/players/ronaldo.png" alt="player1" />
             <h3 class="text-3xl text-center text-white" id="playerName4">C Ronaldo</h3>
@@ -100,8 +107,10 @@
               </button>
             </div>
           </div>
+            <!-- player 4 end  -->
 
-          <!-- player 5  -->
+           <!-- player 5 start  -->
+
           <div class="rounded-lg bg-black pt-3">
             <img src="images/players/thiago-silver.png" alt="player1" />
             <h3 class="text-3xl text-center text-white" id="playerName5">Thiago Silva</h3>
@@ -114,8 +123,9 @@
               </button>
             </div>
           </div>
+           <!-- player 5 end  -->
 
-          <!-- player 6  -->
+          <!-- player 6  start-->
           <div class="rounded-lg bg-black pt-3">
             <img src="images/players/marcelo.png" alt="player1" />
             <h3 id="playerName6" class="text-3xl text-center text-white" id="playerName6">Mercelo</h3>
@@ -128,8 +138,9 @@
               </button>
             </div>
           </div>
+           <!-- player 6 end -->
 
-          <!-- budget  -->
+          <!-- budget area Start-->
           <div class="rounded-lg bg-black">
            <div class="text-white">
             <h1 class="text-amber-600 text-3xl font-medium text-center mb-3">Budget</h1>
@@ -169,12 +180,16 @@
         <h3 class="text-xl text-center mt-2 mb-2">Total: $<span id="total-cost" class="text-amber-500">0</span></h3>
           </div>
         </div>
-
-        <div>
-          
-        </div>
+                <!-- budget area Start-->
       </section>
     </main>
+
+<footer class="bg-black p-8">
+  <section>
+    <p class="text-slate-400 font-lg text-center">All credit goes to Programming Hero 21/08/2022</p>
+  </section>
+  
+</footer>
     <script src="js/utilities.js"></script>
     <script src="js/budget-calculation.js"></script>
     <script src="js/select-player.js"></script>
