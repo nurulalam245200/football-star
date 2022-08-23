@@ -1,25 +1,20 @@
-let TotalPlayer = [];
+let totalPlayerList = [];
 function addName(Id, btn) {
   const players = document.getElementById(Id).innerText;
   if (players) {
     document.getElementById(btn).style.backgroundColor = "gray";
     document.getElementById(btn).disabled = true;
   }
-  TotalPlayer.push(players);
+  totalPlayerList.push(players);
 
   const topPlayer = document.getElementById("topPlayer");
   const ul = document.createElement("ul");
-  for (i = 0; i < TotalPlayer.length; i++) {
-    if (TotalPlayer.length < 6) {
-      ul.innerHTML = `
-        <li>${i + 1} ${TotalPlayer[i]}</li>
+  for (i = 0; i < totalPlayerList.length; i++) {
+    ul.innerHTML = `
+        <li>${i + 1} ${totalPlayerList[i]}</li>
         `;
-      topPlayer.appendChild(ul);
-      const Pqty = TotalPlayer.length;
-      getNumber(Pqty);
-    }
+    topPlayer.appendChild(ul);
+    const selectedPlayer = totalPlayerList.length;
+    getPlayerQuantity(selectedPlayer);
   }
-}
-function getNumber(item) {
-  return item;
 }

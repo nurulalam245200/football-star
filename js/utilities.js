@@ -15,3 +15,8 @@ function getTextelemnts(elementId) {
   const setTextElement = textElement.innerText;
   return setTextElement;
 }
+//only take Player Qunatity
+
+function getPlayerQuantity(topPlayers) {
+  return topPlayers;
+}

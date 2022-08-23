@@ -6,7 +6,7 @@ document
     if (isNaN(perPlayerPrice)) {
       alert("please give a Number");
     } else {
-      const totalPlayerPrice = perPlayerPrice * getNumber(i);
+      const totalPlayerPrice = perPlayerPrice * getPlayerQuantity(i);
 
       const getPreviousTotalPrice =
         document.getElementById("total-player-price");
@@ -24,7 +24,7 @@ document.getElementById("btn-fullCost").addEventListener("click", function () {
   if (isNaN(managePrice) || isNaN(coachPrice) || isNaN(perPlayerPrice)) {
     alert("Please give a Number");
   } else {
-    const totalPlayerPrice = perPlayerPrice * 5;
+    const totalPlayerPrice = perPlayerPrice * getPlayerQuantity(i);
     const setTotalCost = document.getElementById("total-cost");
     setTotalCost.innerText = totalPlayerPrice + coachPrice + managePrice;
   }
